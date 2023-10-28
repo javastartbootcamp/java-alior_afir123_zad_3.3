@@ -11,23 +11,15 @@ public class Person {
     }
 
     public String getFirstName() {
-        if (firstName == null) {
-            return "Brak";
-        } else {
-            return firstName;
-        }
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
     }
 
     public void setFirstName(String firstName) {
         this.firstName = firstName;
-    }
-
-    public String getLastName() {
-        if (lastName == null) {
-            return "Brak";
-        } else {
-            return lastName;
-        }
     }
 
     public void setLastName(String lastName) {
