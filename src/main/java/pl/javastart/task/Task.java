@@ -1,10 +1,10 @@
 package pl.javastart.task;
 
 public class Task {
-    String name;
-    String description;
-    int priority;
-    Person person;
+    private String name;
+    private String description;
+    private int priority;
+    private Person person;
 
     public Task(String name, String description) {
         this.name = name;
@@ -14,13 +14,11 @@ public class Task {
     public Task(String name, String description, int priority) {
         this(name, description);
         this.priority = priority;
-
     }
 
     public Task(String name, String description, int priority, Person person) {
         this(name, description, priority);
         this.person = person;
-
     }
 
     public boolean highPriority() {
@@ -29,7 +27,6 @@ public class Task {
 
     public boolean mediumPriority() {
         return priority == 0;
-
     }
 
     public boolean lowPriority() {
@@ -53,11 +50,7 @@ public class Task {
     }
 
     public int getPriority() {
-        if (person == null) {
-            return -1;
-        } else {
-            return priority;
-        }
+        return priority;
     }
 
     public void setPriority(int priority) {

@@ -1,13 +1,12 @@
 package pl.javastart.task;
 
 public class Person {
-    String firstName;
-    String lastName;
+    private String firstName;
+    private String lastName;
 
     public Person(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
-
     }
 
     public String getFirstName() {
@@ -24,5 +23,10 @@ public class Person {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    @Override
+    public String toString() {
+        return firstName + " " + lastName;
     }
 }
